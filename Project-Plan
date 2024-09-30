@@ -3,14 +3,25 @@ Brief Description of the system:
 Description of the technologies we used and why:
 
 Use case diagram (contains 10 use cases):
+- Use Case 1: The user writes in the journal section every night to reflect on their day, reducing their stress and organizing their thoughts. They can keep a better track of their mental health.
+- Use Case 2: The user tracks daily habits such as what they eat, the things they accomplish on their to do list, and what progress they are making on their goals.
+- Use Case 3: The user keeps track of the meals they are eating each day to track the health benefits/detriments in their diet, helping them make better choices at the grocery store.
+- Use Case 4: The user sends emails to bosses, colleagues, clients, or friends; to set up meetings, provide updates to projects, or keep track of goals.
+- Use Case 5: At the end of each month, the user reflects on the progress they made on their goals, then can make adjustments to the goals to better help achieve them.
+- Use Case 6:
+- Use Case 7:
+- Use Case 8:
+- Use Case 9:
+- Use Case 10:
+
 
 6 UML Diagrams (at least 3 different types):
-- 
-- 
--
--
--
--
+- Sequence Diagram: 
+- Sequence Diagram: 
+- Class Diagram: 
+- Class Diagram: 
+- Activity Diagram: 
+- Activity Diagram: 
 
 Architecture of the system and design rationale:
 
