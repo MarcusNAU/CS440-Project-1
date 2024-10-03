@@ -8,11 +8,11 @@ Use case diagram (contains 10 use cases):
 - Use Case 3: The user keeps track of the meals they are eating each day to track the health benefits/detriments in their diet, helping them make better choices at the grocery store.
 - Use Case 4: The user sends emails to bosses, colleagues, clients, or friends; to set up meetings, provide updates to projects, or keep track of goals.
 - Use Case 5: At the end of each month, the user reflects on the progress they made on their goals, then can make adjustments to the goals to better help achieve them.
-- Use Case 6:
-- Use Case 7:
-- Use Case 8:
-- Use Case 9:
-- Use Case 10:
+- Use Case 6: The user can sort their journal entries into different categories and can set where journals are saved before and after they are written.
+- Use Case 7: The user can set whether they wish to share or not to indirectly share journal entries by setting their profile to public or private.
+- Use Case 8: The user can post their journal entries on a forum where other users can comment on what was written.
+- Use Case 9: The user can comment on another user's post sharing one of their journal entries. 
+- Use Case 10: The user sorts journal entries by favories and non favorites so that they can find the entries that are most important to them more easily.
 
 
 6 UML Diagrams (at least 3 different types):
