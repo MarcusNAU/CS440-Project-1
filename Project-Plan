@@ -16,11 +16,11 @@ Use case diagram (contains 10 use cases):
 
 
 6 UML Diagrams (at least 3 different types):
-- Sequence Diagram: 
-- Sequence Diagram: 
-- Class Diagram: 
-- Package Diagram:
-- Object Diagram: 
+- Sequence Diagram: The user creates a journal entry and sorts it
+- Sequence Diagram: The user edits an already created journal entry
+- Class Diagram: Represent the structure of the database
+- Package Diagram: Create based off of the class diagram
+- Object Diagram: Create with 3-4 different users
 
 Architecture of the system and design rationale:
 
