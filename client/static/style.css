@@ -1,0 +1,288 @@
+/* General reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body format for all the pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9b38b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Page header format */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Login form format */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login box format */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Create account message inside the form */
+.create-account-message {
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add space above the create-account box */
+}
+
+.create-account-message p {
+    margin-bottom: 10px; /* Small space below the paragraph */
+    font-size: 14px; /* Smaller font size for the message */
+}
+
+.create-account-message a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.create-account-message a:hover {
+    background-color: #ddd;
+}
+
+/* Fix for home page h2 and p centering */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust height to not affect header */
+    text-align: center;
+}
+
+.home-content h2, .home-content p {
+    margin: 10px 0;
+}
+
+/* Container for the sidebar and journal entry section */
+.container {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Sidebar format */
+.sidebar {
+    width: 15%; /* Keep the sidebar width smaller */
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Sidebar elements */
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Journal entry section */
+.journal-entry-section, .journal-view-section {
+    width: 800px; /* Set container width to a fixed size */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Relative positioning to contain the button */
+}
+
+/* Textarea for journal entries */
+.journal-entry-section textarea, .journal-view-section textarea {
+    width: 700px !important; /* Set the textarea width explicitly */
+    height: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing */
+}
+
+/* Positioning the button at the top-right of the container */
+.journal-entry-section .entry-header button, .journal-view-section .entry-header button {
+    position: absolute; /* Absolute positioning within container */
+    right: 20px; /* Align to the right edge of the container */
+    top: 10px; /* Align to the top edge of the container */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Flex container for the date and button */
+.entry-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.entry-header h2 {
+    margin-bottom: 0;
+    flex-grow: 1; /* Allow h2 to take available space */
+}
+
+/* Style specific to journal entry forms */
+.journal-form {
+    border: none; /* Remove any default form border */
+    padding: 0; /* Remove padding around the form */
+    background: none; /* Remove any background that might be applied */
+    box-shadow: none; /* Remove any shadow */
+    margin: 0; /* Remove margin */
+}
+
+/* Style the textarea inside the journal form specifically */
+.journal-form textarea {
+    width: 750px; /* Explicit width for the textarea */
+    height: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0; /* Remove any default margin */
+    box-shadow: none; /* Remove any shadow */
+    outline: none; /* Remove focus outline */
+    resize: none; /* Prevent resizing */
+}
+
+/* Additional styles for button positioning */
+.journal-entry-section .entry-header button {
+    position: absolute; /* Absolute positioning within container */
+    right: 20px;
+    top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Sticky navbar */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a:visited, 
+nav ul li a:active {
+    color: white;
+}
