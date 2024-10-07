@@ -21,7 +21,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Login form format */
+/* Login container format */
 .login-container {
     display: flex;
     justify-content: center;
@@ -29,6 +29,7 @@ h1 {
     min-height: 100vh;
 }
 
+/* Create an account container format */
 .register-container {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ h1 {
     min-height: 100vh;
 }
 
-/* Login box format */
+/* Login container format */
 form {
     background-color: white;
     padding: 40px;
@@ -48,6 +49,7 @@ form {
     gap: 20px;
 }
 
+/* Login information format*/
 form input {
     width: 100%;
     padding: 10px;
@@ -55,6 +57,7 @@ form input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 form button {
     width: 100%;
@@ -72,17 +75,19 @@ form button:hover {
     background-color: #555;
 }
 
-/* Create account message inside the form */
+/* Create account message inside the login form */
 .create-account-message {
-    text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Add space above the create-account box */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
+/* Create an account font format*/
 .create-account-message p {
     margin-bottom: 10px; /* Small space below the paragraph */
     font-size: 14px; /* Smaller font size for the message */
 }
 
+/* Create an account button */
 .create-account-message a {
     color: #333;
     text-decoration: none;
@@ -111,14 +116,15 @@ form button:hover {
     margin: 10px 0;
 }
 
-/* Container for the sidebar and journal entry section */
+/* Container for the sidebar and journal entry section page */
 .container {
     display: flex;
     flex-grow: 1;
     padding: 20px;
 }
 
-/* Sidebar format */
+
+/* Previous Journal entry Sidebar format */
 .sidebar {
     width: 15%; /* Keep the sidebar width smaller */
     background-color: #333;
@@ -130,7 +136,7 @@ form button:hover {
     align-items: flex-start;
 }
 
-/* Sidebar elements */
+/* Journal entries Sidebar elements */
 .sidebar h3 {
     text-align: center;
     margin-bottom: 10px;
@@ -160,31 +166,31 @@ form button:hover {
 
 /* Journal entry section */
 .journal-entry-section, .journal-view-section {
-    width: 800px; /* Set container width to a fixed size */
+    width: 800px; 
     padding: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    margin: 0 auto; /* Center the container */
-    position: relative; /* Relative positioning to contain the button */
+    margin: 0 auto; 
+    position: relative; 
 }
 
 /* Textarea for journal entries */
 .journal-entry-section textarea, .journal-view-section textarea {
-    width: 700px !important; /* Set the textarea width explicitly */
+    width: 700px !important;
     height: 400px;
     padding: 15px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: none; /* Prevent resizing */
+    resize: none;
 }
 
-/* Positioning the button at the top-right of the container */
+/* Button format for saving a journal entry, and going back to the journal after viewing an old entry */
 .journal-entry-section .entry-header button, .journal-view-section .entry-header button {
-    position: absolute; /* Absolute positioning within container */
-    right: 20px; /* Align to the right edge of the container */
-    top: 10px; /* Align to the top edge of the container */
+    position: absolute; 
+    right: 20px; 
+    top: 10px; 
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -195,7 +201,8 @@ form button:hover {
     transition: background-color 0.3s ease;
 }
 
-/* Flex container for the date and button */
+
+/* Container for the date and button */
 .entry-header {
     width: 100%;
     display: flex;
@@ -206,48 +213,19 @@ form button:hover {
 
 .entry-header h2 {
     margin-bottom: 0;
-    flex-grow: 1; /* Allow h2 to take available space */
+    flex-grow: 1;
 }
 
-/* Style specific to journal entry forms */
+/* Journal entry forms */
 .journal-form {
-    border: none; /* Remove any default form border */
-    padding: 0; /* Remove padding around the form */
-    background: none; /* Remove any background that might be applied */
-    box-shadow: none; /* Remove any shadow */
-    margin: 0; /* Remove margin */
+    border: none; 
+    padding: 0; 
+    background: none; 
+    box-shadow: none; 
+    margin: 0; 
 }
 
-/* Style the textarea inside the journal form specifically */
-.journal-form textarea {
-    width: 750px; /* Explicit width for the textarea */
-    height: 400px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 0; /* Remove any default margin */
-    box-shadow: none; /* Remove any shadow */
-    outline: none; /* Remove focus outline */
-    resize: none; /* Prevent resizing */
-}
-
-/* Additional styles for button positioning */
-.journal-entry-section .entry-header button {
-    position: absolute; /* Absolute positioning within container */
-    right: 20px;
-    top: 10px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-/* Sticky navbar */
+/* Navbar that stays at the bottom of the screen */
 .navbar {
     width: 100%;
     background-color: #333;
@@ -268,6 +246,7 @@ nav ul li {
     flex-grow: 1;
 }
 
+/* Different page links button */
 nav ul li a {
     display: block;
     padding: 20px;
