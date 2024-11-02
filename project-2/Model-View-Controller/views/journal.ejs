@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with previous journal entries -->
+        <div class="sidebar">
+            <h3>Previous Entries</h3>
+            <ul id="previous-entries">
+                <% journalEntries.forEach(function(entry) { %>
+                    <li><a href="/journal/<%= entry._id %>"><%= entry.date %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    
+        <!-- Main journal entry area -->
+        <div class="journal-entry-section">
+            <div class="entry-header">
+                <h2>Today's Journal Entry: <span id="current-date"><%= new Date().toLocaleDateString() %></span></h2>
+                <button type="submit" form="journal-form">Finish Journal Entry</button> <!-- Reference the form ID -->
+            </div>
+            <form id="journal-form" class="journal-form" action="/create-entry" method="POST">
+                <textarea id="journal-input" name="entry" placeholder="Write your thoughts here..." required></textarea>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="/journal">Journal</a></li>
+                <li><a href="/to-do-list">To Do List</a></li>
+                <li><a href="/goals">Goals</a></li>
+                <li><a href="/meals">Meal Tracker</a></li>
+                <li><a href="/email">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
