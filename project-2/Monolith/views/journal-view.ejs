@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Journal Entry</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with previous journal entries -->
+        <div class="sidebar">
+            <h3>Previous Entries</h3>
+            <ul id="previous-entries">
+                <% journalEntries.forEach(function(entry) { %>
+                    <li><a href="/journal/<%= entry._id %>"><%= entry.date %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+
+        <!-- Main journal entry area -->
+        <div class="journal-view-section">
+            <div class="entry-header">
+                <h2>Viewing Journal Entry from: <%= entry.date %></h2>
+                <button type="button" id="back-button" onclick="window.location.href='/journal'">Back to Journal</button>
+            </div>
+            <form class="journal-form">
+                <textarea id="journal-input" name="entry" readonly><%= entry.entry %></textarea>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="/journal">Journal</a></li>
+                <li><a href="/to-do-list">To Do List</a></li>
+                <li><a href="/goals">Goals</a></li>
+                <li><a href="/meals">Meal Tracker</a></li>
+                <li><a href="/email">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
