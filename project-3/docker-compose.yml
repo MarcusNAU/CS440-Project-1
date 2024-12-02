@@ -1,0 +1,48 @@
+version: '3.9'
+services:
+  user-service:
+    build: ./microservices/user-service
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/userDB
+
+  journal-service:
+    build: ./microservices/journal-service
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/journalDB
+
+  static-service:
+    build: ./microservices/static-service
+    ports:
+      - "3003:3003"
+  
+  gateway:
+    build: ./gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - user-service
+      - journal-service
+      - static-service
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
